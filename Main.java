@@ -28,13 +28,29 @@ public class Main{
 
 		//validacion del triangulo
 		alturaTriangulo=Math.sqrt((Math.pow(lado1Triangulo,2))-(Math.pow((baseTriangulo/2),2)));
-		totalAreaTriangulo=baseTriangulo*alturaTriangulo;
+		totalAreaTriangulo=(baseTriangulo*alturaTriangulo)/2;
 		totalPerimetroTriangulo=lado1Triangulo+lado2Triangulo+lado3Triangulo;
 
 		//validacion del circulo
 		totalPerimetroCirculo=2*3.1416*radioCirculo;
 		totalAreaCirculo=3.1416*(Math.pow(radioCirculo,2));
 
+
+		//respuestas
+
+		System.out.println("El area del cuadrado es: "+totalAreaCuadrado);
+		System.out.println("");
+		System.out.println("El area del circulo es: "+totalAreaCirculo);
+		System.out.println("");
+		System.out.println("El area del triangulo es: "+totalAreaTriangulo);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("El perimetro del cuadrado es: "+totalPerimetroCuadrado);
+		System.out.println("");
+		System.out.println("El perimetro del circulo es: "+totalPerimetroCirculo);
+		System.out.println("");
+		System.out.println("El perimetro del triangulo es: "+totalPerimetroTriangulo);
+		System.out.println("");
 
 	}
 
